@@ -389,15 +389,15 @@ function slide9(i){
     timeline.add(TweenMax.from("#nom9", 0.5, {delay:.2,css:{opacity:.7, top:"1vw"}}));
     timeline.add(TweenMax.from("#nom9_img1", .5,{delay:.4 ,css:{"margin-top": "-30vw", opacity:0}}),0);   
     timeline.add(TweenMax.from("#nom9_img2", .5,{delay:.6, css:{"margin-top": "-30vw", opacity:0}}),0);
-    timeline.add(TweenMax.from("#nom9_img3", .5,{delay:.8, css:{scale: 0}}),0);
-    timeline.add(TweenMax.from("#nom9_img4", .5,{delay:1, css:{scale: 0}}),0);
-    timeline.add(TweenMax.from("#nom9_img5", .5,{delay:1.2, css:{scale: 0}}),0);
-    timeline.add(TweenMax.from("#nom9_img6", .5,{delay:1.4, css:{"margin-top": "30vw", opacity:0}}),0);
-    timeline.add(TweenMax.from("#nom9_img7", .5,{delay:1.6, css:{"margin-top": "-30vw", opacity:0}}),0);
-    timeline.add(TweenMax.from("#nom9_img8", .5,{delay:1.8, css:{"margin-top": "-10vw", opacity:0},ease:Back.easeOut}),0);
-    timeline.add(TweenMax.from("#nom9_img9", .5,{delay:2, css:{"margin-top": "30vw", opacity:0}}),0);
-    timeline.add(TweenMax.from("#nom9_img10", .5,{delay:2.2, css:{"margin-top": "-30vw", opacity:0}}),0);
-    timeline.add(TweenMax.from("#nom9_img11", .5,{delay:2.4, css:{"margin-top": "-10vw", opacity:0},ease:Back.easeOut}),0);    
+    timeline.add(TweenMax.from("#nom9_img3", .5,{delay:.8, css:{"margin-top": "-30vw", opacity:0}}),0); 
+    timeline.add(TweenMax.from("#nom9_img4", .5,{delay:1, css:{"margin-top": "-30vw", opacity:0}}),0); 
+    timeline.add(TweenMax.from("#nom9_img5", .5,{delay:1.2, css:{"margin-top": "-30vw", opacity:0}}),0); 
+    timeline.add(TweenMax.from("#nom9_img6", .5,{delay:1.4, css:{"margin-left": "-30vw", opacity:0}}),0);
+    timeline.add(TweenMax.from("#nom9_img7", .5,{delay:1.6, css:{opacity:0}}),0);
+    timeline.add(TweenMax.from("#nom9_img8", .5,{delay:1.8, css:{"margin-left": "10vw", opacity:0},ease:Back.easeOut}),0);
+    timeline.add(TweenMax.from("#nom9_img9", .5,{delay:2, css:{"margin-left": "30vw", opacity:0}}),0);
+    timeline.add(TweenMax.from("#nom9_img10", .5,{delay:2.2, css:{"margin-left": "30vw", opacity:0}}),0);
+    timeline.add(TweenMax.from("#nom9_img11", .5,{delay:2.4, css:{"margin-left": "10vw", opacity:0},ease:Back.easeOut}),0);    
     
     $("#nom9 .equipo_bounce").each(function(i,v){
         timeline.add(TweenMax.from(v, 1,{delay:1, css:{scale: 0, opacity:0}, ease:Elastic.easeOut}), i * 0.1);
