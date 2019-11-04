@@ -1,0 +1,850 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 97%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+  
+}
+.fondo{
+  background-image: url(../images/bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color:#ffffff;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+li {
+  list-style: none;
+}
+/* Estilo de los elementos generales */
+.posAbsolute {
+  position: absolute;
+}
+.element {
+  position: absolute;
+}
+
+.centradoH {
+  margin: auto;
+}
+.centradoV {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circulo {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.espacio1 {
+  width: 100vw;
+  height: calc(100vw * 944 / 1920);
+}
+.espacioFull {
+  width: 100vw;
+  height: 100vh;
+}
+.contentIMG {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.contentIMG_cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contentIMG_contain {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.lineaRoja {
+  background: #cf0109;
+  height: 2px;
+  width: 30vw;
+  -ms-transform-origin: center center;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 100vw;
+}
+.con_sombra {
+  box-shadow: 0px 0px 5px #000;
+}
+.recorte {
+  overflow: hidden;
+}
+.circulo_centrado {
+  border-radius: 50%;
+  -ms-transform-origin: center center;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+}
+.texto_derecha {
+  text-align: right;
+}
+.texto_izquierda {
+  text-align: left;
+}
+.texto_centrado {
+  text-align: center;
+}
+#indicadores_box1 {
+  top: 100vh;
+}
+#indicadores_box2 {
+  top: 100vh;
+  left: 100vw;
+}
+#indicadores_box3 {
+  top: 200vh;
+  left: 100vw;
+}
+.indicadores_text {
+  font-family: "Lato", sans-serif;
+  color: #1d1d1d;
+  font-size: 1.2vw;
+}
+.indicadores_numero {
+  font-size: 3vw;
+  font-family: "Acme";
+  color: #cf0109;
+}
+.impactados_text {
+  font-family: "Lato", sans-serif;
+  color: #fff;
+  font-size: 2vw;
+}
+.impactados_text {
+  font-family: "Lato", sans-serif;
+  color: #fff;
+  font-size: 2vw;
+}
+.impactados_numero {
+  font-size: 6vw;
+  font-family: "Acme";
+  color: #fff;
+}
+.page {
+  /*background-color: white;*/
+  position: relative;
+  overflow: hidden;
+}
+.page > div {
+  position: absolute;
+}
+
+#portrait_message {
+  position: fixed;
+  display: none;
+  z-index: 10;
+}
+
+
+/* Estilo de Menú general */
+
+#contenedorMenu {
+  top: 0vw;
+  bottom: 0vw;
+  position: fixed;
+  left: 2vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#menuNav {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 16vw;
+  width: calc(29vw * 0.1);
+  background-color: hsla(0, 0%, 0%, 0.5);
+  -moz-border-radius: 1.5vw;
+  -webkit-border-radius: 1.5vw;
+  border-radius: 1.5vw;
+  justify-content: space-evenly;
+}
+.btnsNav {
+  height: 1vw;
+  width: 30vw;
+  background-color: transparent;
+  margin-left: 1vw;
+}
+
+.btnTag {
+  font-family: "Lato";
+  width: 40vw;
+  font-size: 1vw;
+  margin-left: 2.5vw;
+  position: absolute;
+  opacity: 0;
+  text-shadow: 1px 1px 1px rgba(87, 87, 87, 1);
+}
+.navIndicador {
+  z-index: 10;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  height: 1vw;
+  width: 1vw;
+  background-color: #696969;
+  border: 0px solid #fff;
+  position: absolute;
+}
+.navIndicador:hover {
+  box-shadow: 0px 0px 5px #000;
+  cursor: pointer;
+}
+#btn1:hover {
+  background-color: #ffffff;
+}
+#btn2:hover {
+  background-color: #00822A;
+}
+#btn3:hover {
+  background-color: #FB4D3D;
+}
+#btn4:hover {
+  background-color: #F4AD33;
+}
+#btn1Tag {
+  color: #ffffff;
+}
+#btn2Tag {
+  color: #00822A;
+}
+#btn3Tag {
+  color: #FB4D3D;
+}
+#btn4Tag {
+  color: #F4AD33;
+}
+
+.navEdge{
+  margin-bottom: 1.6vw !important;
+}
+.menuNavEdge{
+  padding-top: 1vw !important;
+}
+.indice-text{
+    transform: rotate(271deg);
+    top: 8vw;
+    position: absolute;
+    font-size: 1vw;
+    font-family: Lato;
+    left: -2vw;
+    color: #b1abab;
+}
+
+@media screen and (orientation: portrait) {
+  #portrait_message {
+    display: block;
+  }
+}
+
+@media only screen and (orientation: landscape)and (max-width: 767px){
+  #menuNav {
+    height: 24vw !important;
+  }
+  .btnsNav {
+    height: 1.2vw;
+  }
+  .btnTag {
+    font-size: 2vw;
+  }
+}
+
+
+
+/* Estilo de Menú Heineken */
+
+#contenedorMenuHeineken {
+  top: 3vw;
+  bottom: 0vw;
+  position: fixed;
+  left: 5vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#menuNavHeineken {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 713px;
+  width: 173px;
+  /*height: 26vw;
+  width: calc(29vw * 0.1);
+  background-color: rgb(0, 130, 42, 0.5);*/
+  background-image: url(../images/02histoheine/bgheineken.png);
+  -moz-border-radius: 1.5vw;
+  -webkit-border-radius: 1.5vw;
+  border-radius: 1.5vw;
+  justify-content: space-evenly;
+}
+.btnsNavHeineken {
+  height: 1vw;
+  width: 30vw;
+  background-color: transparent;
+  margin-left: 4vw;
+  margin-bottom: -7vw;
+}
+
+.btnTagHeineken {
+  
+  font-family: "Lato";
+  width: 40vw;
+  font-size: 1.8vw;
+  color: #ffffff;
+  margin-left: -1.5vw;
+  /*position: absolute;*/
+  margin-top: .1vw;
+  /*opacity: 0;*/
+  text-shadow: 1px 1px 1px rgba(87, 87, 87, 1);
+}
+.navIndicadorHeineken {
+  /*-z-index: 1;*/
+  -moz-border-radius: 0%;
+  -webkit-border-radius: 0%;
+  border-radius: 0%;
+  height: 2vw;
+  width: 4.8vw;
+  margin-left: -2vw;
+  background-color: rgba(87, 87, 87, .2);
+  border: 0px solid #fff;
+  position: absolute;
+}
+.navIndicadorHeineken:hover {
+  /*box-shadow: 0px 0px 5px #000;*/
+  cursor: pointer;
+}
+#btn1Heineken:hover {
+  background-color: rgba(0, 130, 42, .5);
+}
+#btn2Heineken:hover {
+  background-color: rgba(0, 130, 42, .5);
+}
+#btn3Heineken:hover {
+  background-color: rgba(0, 130, 42, .5);
+}
+#btn4Heineken:hover {
+  background-color: rgba(0, 130, 42, .5);
+}
+#btn5Heineken:hover {
+  background-color: rgba(0, 130, 42, .5);
+}
+#btn6Heineken:hover {
+  background-color: rgba(0, 130, 42, .5);
+}
+#btn7Heineken:hover {
+  background-color: rgba(0, 130, 42, .5);
+}
+
+#btn1TagHeineken {
+  color: #ffffff;
+}
+#btn2TagHeineken {
+  color: #ffffff;
+}
+#btn3TagHeineken {
+  color: #ffffff;
+}
+#btn4TagHeineken {
+  color: #ffffff;
+}
+#btn5TagHeineken {
+  color: #ffffff;
+}
+#btn6TagHeineken {
+  color: #ffffff;
+}
+#btn7TagHeineken {
+  color: #ffffff;
+}
+.navEdgeHeineken{
+  margin-bottom: 1.6vw !important;
+}
+.menuNavEdgeHeineken{
+  padding-top: 1vw !important;
+}
+.indice-textHeineken{
+    transform: rotate(271deg);
+    top: 18vw;
+    position: absolute;
+    font-size: 1vw;
+    font-family: Lato;
+    left: -1.4vw;
+    color: #b1abab;
+}
+
+@media screen and (orientation: portrait) {
+  #portrait_message {
+    display: block;
+  }
+}
+
+@media only screen and (orientation: landscape)and (max-width: 767px){
+  #menuNavHeineken {
+    height: 24vw !important;
+  }
+  .btnsNavHeineken {
+    height: 1.2vw;
+  }
+  .btnTagHeineken {
+    font-size: 2vw;
+  }
+}
+
+
+/* Estilo de Menú SIX */
+
+#contenedorMenuSIX {
+  top: 4vw;
+  bottom: 0vw;
+  position: fixed;
+  left: 5vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#menuNavSIX {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 804px;
+  width: 173px;
+  /*height: 26vw;
+  width: calc(29vw * 0.1);
+  background-color: rgb(0, 130, 42, 0.5);*/
+  background-image: url(../images/03histosix/bgsix.png);
+  -moz-border-radius: 1.5vw;
+  -webkit-border-radius: 1.5vw;
+  border-radius: 1.5vw;
+  justify-content: space-evenly;
+}
+.btnsNavSIX {
+  height: 1vw;
+  width: 30vw;
+  background-color: transparent;
+  margin-left: 4vw;
+  margin-bottom: -7vw;
+
+}
+
+.btnTagSIX {
+  font-family: "Lato";
+  width: 40vw;
+  z-index: 999; 
+  font-size: 1.8vw;
+  margin-left: -1.5vw;
+  /*position: absolute;*/
+  margin-top: .1vw;
+  /*opacity: 0;*/
+  text-shadow: 1px 1px 1px rgba(87, 87, 87, 1);
+}
+
+.navIndicadorSIX {
+  /*z-index: 10;*/
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 0%;
+  height: 2vw;
+  width: 4.8vw;
+  margin-left: -2vw;
+  background-color: rgba(87, 87, 87, .2);
+  border: 0px solid #fff;
+  position: absolute;
+}
+.navIndicadorSIX:hover {
+  /*box-shadow: 0px 0px 5px #000;*/
+  cursor: pointer;
+}
+#btn1SIX:hover {
+  background-color: rgba(251, 77, 61, .7);
+}
+#btn2SIX:hover {
+  background-color: rgba(251, 77, 61, .7);
+}
+#btn3SIX:hover {
+  background-color: rgba(251, 77, 61, .7);
+}
+#btn4SIX:hover {
+  background-color: rgba(251, 77, 61, .7);
+}
+#btn5SIX:hover {
+  background-color: rgba(251, 77, 61, .7);
+}
+#btn6SIX:hover {
+  background-color: rgba(251, 77, 61, .7);
+}
+#btn7SIX:hover {
+  background-color: rgba(251, 77, 61, .7);
+}
+#btn8SIX:hover {
+  background-color: rgba(251, 77, 61, .7);
+}
+#btn9SIX:hover {
+  background-color: rgba(251, 77, 61, .7);
+}
+
+#btn1TagSIX {
+  color: #ffffff;
+}
+#btn2TagSIX {
+  color: #ffffff;
+}
+#btn3TagSIX {
+  color: #ffffff;
+}
+#btn4TagSIX {
+  color: #ffffff;
+}
+#btn5TagSIX {
+  color: #ffffff;
+}
+#btn6TagSIX {
+  color: #ffffff;
+}
+#btn7TagSIX {
+  color: #ffffff;
+}
+#btn8TagSIX {
+  color: #ffffff;
+}
+#btn9TagSIX {
+  color: #ffffff;
+}
+.navEdgeSIX{
+  margin-bottom: 1.6vw !important;
+}
+.menuNavEdgeSIX{
+  padding-top: 1vw !important;
+}
+.indice-textSIX{
+    transform: rotate(271deg);
+    top: 20vw;
+    position: absolute;
+    font-size: 1vw;
+    font-family: Lato;
+    left: .3vw;
+    color: #b1abab;
+}
+
+@media screen and (orientation: portrait) {
+  #portrait_messageSIX {
+    display: block;
+  }
+}
+
+@media only screen and (orientation: landscape)and (max-width: 767px){
+  #menuNavSIX {
+    height: 24vw !important;
+  }
+  .btnsNavSIX {
+    height: 1.2vw;
+  }
+  .btnTagSIX {
+    font-size: 2vw;
+  }
+}
+
+/* Estilo de Menú Retail */
+
+#contenedorMenuRetail {
+  top: 1.5vw;
+  bottom: 0vw;
+  position: fixed;
+  left: 5vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#menuNavRetail {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 804px;
+  width: 173px;
+  /*height: 26vw;
+  width: calc(29vw * 0.1);
+  background-color: rgb(0, 130, 42, 0.5);*/
+  background-image: url(../images/04historetail/bgretail.png);
+  -moz-border-radius: 1.5vw;
+  -webkit-border-radius: 1.5vw;
+  border-radius: 1.5vw;
+  justify-content: space-evenly;
+}
+.btnsNavRetail {
+  height: 1vw;
+  width: 30vw;
+  background-color: transparent;
+  margin-left: 4vw;
+  margin-bottom: -7vw;
+}
+
+.btnTagRetail {
+  font-family: "Lato";
+  text-align: center;
+  width: 40vw;
+  font-size: 1.8vw;
+  margin-left: -19.6vw;
+  /*position: absolute;*/
+  margin-top: .1vw;
+  /*opacity: 0;*/
+  text-shadow: 1px 1px 1px rgba(87, 87, 87, 1);
+  }
+.navIndicadorRetail {
+  /*z-index: 10;*/
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 0%;
+  height: 2vw;
+  width: 4.8vw;
+  margin-left: -2vw;
+  background-color: rgba(87, 87, 87, .2);
+  border: 0px solid #fff;
+  position: absolute;
+}
+.navIndicadorRetail:hover {
+  /*box-shadow: 0px 0px 5px #000;*/
+  cursor: pointer;
+}
+#btn1Retail:hover {
+  background-color: rgba(244, 173, 51, .7);
+}
+#btn2Retail:hover {
+  background-color: rgba(244, 173, 51, .7);
+}
+#btn3Retail:hover {
+  background-color: rgba(244, 173, 51, .7);
+}
+#btn4Retail:hover {
+  background-color: rgba(244, 173, 51, .7);
+}
+#btn5Retail:hover {
+  background-color: rgba(244, 173, 51, .7);
+}
+#btn6Retail:hover {
+  background-color: rgba(244, 173, 51, .7);
+}
+#btn7Retail:hover {
+  background-color: rgba(244, 173, 51, .7);
+}
+#btn8Retail:hover {
+  background-color: rgba(244, 173, 51, .7);
+}
+#btn9Retail:hover {
+  background-color: rgba(244, 173, 51, .7);
+}
+
+#btn1TagRetail {
+z-index: 9999;    
+  font-size: 1.1vw;
+  color: #ffffff;
+}
+#btn2TagRetail {
+  color: #ffffff;
+}
+#btn3TagRetail {
+  color: #ffffff;
+}
+#btn4TagRetail {
+  color: #ffffff;
+}
+#btn5TagRetail {
+  color: #ffffff;
+}
+#btn6TagRetail {
+  color: #ffffff;
+}
+#btn7TagRetail {
+  color: #ffffff;
+}
+#btn8TagRetail {
+  color: #ffffff;
+}
+#btn9TagRetail {
+  color: #ffffff;
+}
+.navEdgeRetail{
+  margin-bottom: 1.6vw !important;
+}
+.menuNavEdgeRetail{
+  padding-top: 1vw !important;
+}
+.indice-textRetail{
+    transform: rotate(271deg);
+    top: 20vw;
+    position: absolute;
+    font-size: 1vw;
+    font-family: Lato;
+    left: -.5vw;
+    color: #b1abab;
+}
+
+@media screen and (orientation: portrait) {
+  #portrait_message {
+    display: block;
+  }
+}
+
+@media only screen and (orientation: landscape)and (max-width: 767px){
+  #menuNavRetail {
+    height: 24vw !important;
+  }
+  .btnsNavRetail {
+    height: 1.2vw;
+  }
+  .btnTagRetail {
+    font-size: 2vw;
+  }
+}
