@@ -292,7 +292,8 @@ function slide8 (i) {
     $("#nom8_img8").fadeOut();
     $("#nom8_img9").fadeOut();
     $("#nom8_img10").fadeOut();
-        
+    $("#cerrar1").fadeOut();
+
     $("#click1").click(function(){
        
         $("#click1").fadeOut();
