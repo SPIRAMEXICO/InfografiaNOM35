@@ -418,7 +418,7 @@ function slide9(i){
 function slide10 (i) {
     var timeline = new TimelineMax({paused: true});
     timeline.add(TweenMax.from("#nom10", 0.5, {delay:.2,css:{opacity:.7, top:"1vw"}}));
-    timeline.add(TweenMax.from("#nom10_img1", .5,{delay:.4,css:{opacity:0, top:"20vw"}})); 
+    timeline.add(TweenMax.from("#nom10_img1", .5,{delay:.4, css:{opacity:0}}),0);
     timeline.add(TweenMax.from("#nom10_img2", .5,{delay:.6, css:{scale: 0}}),0);
     timeline.add(TweenMax.from("#nom10_img3", .5,{delay:.8, css:{"margin-left": "-30vw", opacity:0}}),0);
     timeline.add(TweenMax.from("#nom10_img4", .5,{delay:1, css:{"margin-left": "30vw", opacity:0}}),0);
@@ -462,6 +462,63 @@ function slide11(i) {
     timeline.add(TweenMax.from("#nom11_img14", .5,{delay:3,  css:{"margin-top": "-30vw", opacity:0}}),0);
     timeline.add(TweenMax.from("#nom11_img15", .5,{delay:3.2, css:{"margin-top": "-30vw", opacity:0}}),0);
     
+    $("#nom11_img13").fadeOut();
+    $("#nom11_img14").fadeOut();
+    $("#nom11_img15").fadeOut();
+    $("#nom8_img11").fadeOut();
+    $("#cerrar5").fadeOut();
+    $("#click6").fadeOut();
+    $("#cerrar6").fadeOut();
+    $("#click7").fadeOut();
+    $("#cerrar7").fadeOut();
+
+    $("#click5").click(function(){
+       
+        $("#click5").fadeOut();
+        $("#nom11_img13").fadeIn();
+        $("#cerrar5").fadeIn();
+
+    });
+
+    $("#cerrar5").click(function(){
+       
+      $("#cerrar5").fadeOut();
+      $("#nom11_img13").fadeOut();
+      $("#click6").fadeIn();
+
+  });
+
+  $("#click6").click(function(){
+       
+    $("#click6").fadeOut();
+    $("#nom11_img14").fadeIn();
+    $("#cerrar6").fadeIn();
+
+});
+
+$("#cerrar6").click(function(){
+   
+  $("#cerrar6").fadeOut();
+  $("#nom11_img14").fadeOut();
+  $("#click7").fadeIn();
+
+});
+
+$("#click7").click(function(){
+       
+  $("#click7").fadeOut();
+  $("#nom11_img15").fadeIn();
+  $("#cerrar7").fadeIn();
+
+});
+
+$("#cerrar7").click(function(){
+ 
+$("#cerrar7").fadeOut();
+$("#nom11_img15").fadeOut();
+
+});
+
     
     var scene = new ScrollMagic.Scene({
         triggerElement: "#nom11"
