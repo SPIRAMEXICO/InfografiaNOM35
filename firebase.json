@@ -1,0 +1,41 @@
+{
+  "hosting": {
+    "public": "src",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/src/heineken/novedades/*",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/src/heineken/sietepasos/*",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/src/six/aSIXtente/*",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/src/six/coaching/*",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/src/six/historiaSIX/*",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/src/philipmorris/bace infografia/*",
+        "destination": "/index.html"
+      }
+
+    ]
+  }
+}
