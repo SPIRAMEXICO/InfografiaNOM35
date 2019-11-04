@@ -125,11 +125,11 @@ function slide1(i) {
 function slide2(i) {
     var timeline = new TimelineMax({paused: true});
     timeline.add(TweenMax.from("#nom2", 0.5,{delay:.2,css:{opacity:.7, top:"1vw"}}));
-    timeline.add(TweenMax.from("#nom2_img1", .5,{delay:.4 ,css:{"margin-top": "-30vw", opacity:0}}),0);
+    timeline.add(TweenMax.from("#nom2_img1", .5,{delay:.4 ,css:{ opacity:0}}),0);
     timeline.add(TweenMax.from("#nom2_img2", .5,{delay:.6,css:{scale:0, opacity:0}}),0);
-    timeline.add(TweenMax.from("#nom2_img3", .5,{delay:.8,css:{"margin-top": "-30vh", opacity:0}}),0);
+    timeline.add(TweenMax.from("#nom2_img3", .5,{delay:.8,css:{"margin-left": "-60vh", opacity:0}}),0);
     timeline.add(TweenMax.from("#nom2_img4", .5,{delay:1,css:{"margin-top": "30vh", opacity:0}}),0);
-    timeline.add(TweenMax.from("#nom2_img5", .5,{delay:1.2,css:{"margin-left": "-30vh", opacity:0}}),0);
+    timeline.add(TweenMax.from("#nom2_img5", .5,{delay:1.2,css:{"margin-top": "-15vh", opacity:0}}),0);
             
     var scene = new ScrollMagic.Scene({
         triggerElement: "#nom2"
