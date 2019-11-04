@@ -292,7 +292,14 @@ function slide8 (i) {
     $("#nom8_img8").fadeOut();
     $("#nom8_img9").fadeOut();
     $("#nom8_img10").fadeOut();
+    $("#nom8_img11").fadeOut();
     $("#cerrar1").fadeOut();
+    $("#click2").fadeOut();
+    $("#cerrar2").fadeOut();
+    $("#click3").fadeOut();
+    $("#cerrar3").fadeOut();
+    $("#click4").fadeOut();
+    $("#cerrar4").fadeOut();
 
     $("#click1").click(function(){
        
@@ -301,6 +308,62 @@ function slide8 (i) {
         $("#cerrar1").fadeIn();
 
     });
+
+    $("#cerrar1").click(function(){
+       
+      $("#cerrar1").fadeOut();
+      $("#nom8_img8").fadeOut();
+      $("#click2").fadeIn();
+
+  });
+
+  $("#click2").click(function(){
+       
+    $("#click2").fadeOut();
+    $("#nom8_img9").fadeIn();
+    $("#cerrar2").fadeIn();
+
+});
+
+$("#cerrar2").click(function(){
+   
+  $("#cerrar2").fadeOut();
+  $("#nom8_img9").fadeOut();
+  $("#click3").fadeIn();
+
+});
+
+$("#click3").click(function(){
+       
+  $("#click3").fadeOut();
+  $("#nom8_img10").fadeIn();
+  $("#cerrar3").fadeIn();
+
+});
+
+$("#cerrar3").click(function(){
+ 
+$("#cerrar3").fadeOut();
+$("#nom8_img10").fadeOut();
+$("#click4").fadeIn();
+
+});
+
+$("#click4").click(function(){
+       
+  $("#click4").fadeOut();
+  $("#nom8_img11").fadeIn();
+  $("#cerrar4").fadeIn();
+
+});
+
+$("#cerrar4").click(function(){
+ 
+$("#cerrar4").fadeOut();
+$("#nom8_img11").fadeOut();
+
+});
+
 
 
 
