@@ -534,18 +534,18 @@ $("#nom11_img15").fadeOut();
 
 function slide12 (i) {
     var timeline = new TimelineMax({paused: true});
-    timeline.add(TweenMax.from("#nom12_img1", .5,{delay:.2,css:{scale:0, opacity:0}}),0);
-    timeline.add(TweenMax.from("#nom12_img2", .5,{delay:.6, css:{scale: 0}}),0);
-    timeline.add(TweenMax.from("#nom12_img3", .5,{delay:.9,css:{scale:0, opacity:0}}),0);
-    timeline.add(TweenMax.from("#nom12_img4", .5,{delay:1,css:{scale:0, opacity:0}}),0);
-    timeline.add(TweenMax.from("#nom12_img5", .5,{delay:1.2,css:{"margin-top": "30vh", opacity:0}}),0);
-    timeline.add(TweenMax.from("#nom12_img6", .5,{delay:.4 ,css:{"margin-top": "-30vw", opacity:0}}),0); 
-    timeline.add(TweenMax.from("#nom12_img7", .5,{delay:.6, css:{scale: 0}}),0);
-    timeline.add(TweenMax.from("#nom12_img8", .5,{delay:.9,css:{scale:0, opacity:0}}),0);
-    timeline.add(TweenMax.from("#nom12_img9", .5,{delay:1,css:{scale:0, opacity:0}}),0);
-    timeline.add(TweenMax.from("#nom12_img10", .5,{delay:1.2,css:{"margin-top": "30vh", opacity:0}}),0);
-    timeline.add(TweenMax.from("#nom12_img11", .5,{delay:.4 ,css:{"margin-top": "-30vw", opacity:0}}),0); 
-    timeline.add(TweenMax.from("#nom12_img12", .5,{delay:.6, css:{scale: 0}}),0);
+    timeline.add(TweenMax.from("#nom12_img1", .5,{delay:.2,css:{opacity:0}}),0);
+    timeline.add(TweenMax.from("#nom12_img2", .5,{delay:.6, css:{"margin-top": "-30vh", opacity: 0}}),0);
+    timeline.add(TweenMax.from("#nom12_img3", .5,{delay:.9,css:{opacity:0}}),0);
+    timeline.add(TweenMax.from("#nom12_img4", .5,{delay:1,css:{"margin-top": "-30vh", opacity:0}}),0);
+    timeline.add(TweenMax.from("#nom12_img5", .5,{delay:1.2,css:{"margin-left": "30vh", opacity:0}}),0);
+    timeline.add(TweenMax.from("#nom12_img6", .5,{delay:1.4 ,css:{"margin-left": "30vh", opacity:0}}),0); 
+    timeline.add(TweenMax.from("#nom12_img7", .5,{delay:1.6, css:{"margin-left": "30vh", opacity:0}}),0); 
+    timeline.add(TweenMax.from("#nom12_img8", .5,{delay:1.8,css:{"margin-left": "30vh", opacity:0}}),0); 
+    timeline.add(TweenMax.from("#nom12_img9", .5,{delay:2,css:{"margin-left": "30vh", opacity:0}}),0); 
+    timeline.add(TweenMax.from("#nom12_img10", .5,{delay:2.2,css:{"margin-top": "30vh", opacity:0}}),0);
+    timeline.add(TweenMax.from("#nom12_img11", .5,{delay:2.4 ,css:{opacity:0}}),0); 
+    timeline.add(TweenMax.from("#nom12_img12", .5,{delay:2.6, css:{"margin-left": "-30vh", opacity:0}}),0); 
             
     var scene = new ScrollMagic.Scene({
         triggerElement: "#nom12"
@@ -612,12 +612,12 @@ function slide15 (i) {
   var timeline = new TimelineMax({paused: true});
   timeline.add(TweenMax.from("#nom15", 0.5, {delay:.2,css:{opacity:.7, top:"1vw"}}));
   timeline.add(TweenMax.from("#nom15_img1", .5,{delay:.4, css:{"margin-top": "30vw", opacity:0}}),0);
-  timeline.add(TweenMax.from("#nom15_img2", .5,{delay:.6, css:{"margin-left": "30vw", opacity:0}}),0);
-  timeline.add(TweenMax.from("#nom15_img3", .5,{delay:.8, css:{"margin-left": "-30vw", opacity:0}}),0);
+  timeline.add(TweenMax.from("#nom15_img2", .5,{delay:.6, css:{opacity:0}}),0);
+  timeline.add(TweenMax.from("#nom15_img3", .5,{delay:.8, css:{"margin-top": "-30vw", opacity:0}}),0);
   timeline.add(TweenMax.from("#nom15_img4", .5,{delay:1,  css:{"margin-top": "-30vw", opacity:0}}),0);
   timeline.add(TweenMax.from("#nom15_img5", .5,{delay:1.2, css:{"margin-top": "-30vw", opacity:0}}),0);
   timeline.add(TweenMax.from("#nom15_img6", .5,{delay:1.4, css:{"margin-top": "-30vw", opacity:0}}),0);
-  timeline.add(TweenMax.from("#nom15_img7", .5,{delay:1.6,  css:{scale: 0}}),0);
+  timeline.add(TweenMax.from("#nom15_img7", .5,{delay:1.6,  css:{opacity: 0}}),0);
   
   
   var scene = new ScrollMagic.Scene({
@@ -635,9 +635,9 @@ function slide15 (i) {
 function slide16 (i) {    
   var timeline = new TimelineMax({paused: true});
   timeline.add(TweenMax.from("#nom16", 0.5, {delay:.2,css:{opacity:.7, top:"1vw"}}));
-  timeline.add(TweenMax.from("#nom16_img1", .5,{delay:.4, css:{"margin-top": "30vw", opacity:0}}),0);
-  timeline.add(TweenMax.from("#nom16_img2", .5,{delay:.6, css:{"margin-left": "30vw", opacity:0}}),0);
-  timeline.add(TweenMax.from("#nom16_img3", .5,{delay:.8, css:{"margin-left": "-30vw", opacity:0}}),0);
+  timeline.add(TweenMax.from("#nom16_img1", .5,{delay:.4, css:{ opacity:0}}),0);
+  timeline.add(TweenMax.from("#nom16_img2", .5,{delay:.6, css:{"margin-left": "-30vw", opacity:0}}),0);
+  timeline.add(TweenMax.from("#nom16_img3", .5,{delay:.8, css:{"margin-top": "-30vw", opacity:0}}),0);
   timeline.add(TweenMax.from("#nom16_img4", .5,{delay:1,  css:{"margin-top": "-30vw", opacity:0}}),0);
   timeline.add(TweenMax.from("#nom16_img5", .5,{delay:1.2, css:{"margin-top": "-30vw", opacity:0}}),0);
   
@@ -657,17 +657,17 @@ function slide16 (i) {
 function slide17 (i) {    
   var timeline = new TimelineMax({paused: true});
   timeline.add(TweenMax.from("#nom17", 0.5, {delay:.2,css:{opacity:.7, top:"1vw"}}));
-  timeline.add(TweenMax.from("#nom17_img1", .5,{delay:.4, css:{"margin-top": "30vw", opacity:0}}),0);
+  timeline.add(TweenMax.from("#nom17_img1", .5,{delay:.3, css:{opacity:0}}),0);
   timeline.add(TweenMax.from("#nom17_img2", .5,{delay:.6, css:{"margin-left": "30vw", opacity:0}}),0);
-  timeline.add(TweenMax.from("#nom17_img3", .5,{delay:.8, css:{"margin-left": "-30vw", opacity:0}}),0);
-  timeline.add(TweenMax.from("#nom17_img4", .5,{delay:1,  css:{"margin-top": "-30vw", opacity:0}}),0);
-  timeline.add(TweenMax.from("#nom17_img5", .5,{delay:1.2, css:{"margin-top": "-30vw", opacity:0}}),0);
-  timeline.add(TweenMax.from("#nom17_img6", .5,{delay:1.4, css:{"margin-top": "-30vw", opacity:0}}),0);
-  timeline.add(TweenMax.from("#nom17_img7", .5,{delay:1.6,  css:{scale: 0}}),0);
-  timeline.add(TweenMax.from("#nom17_img8", .5,{delay:1.8, css:{"margin-left": "-30vw", opacity:0}}),0);
-  timeline.add(TweenMax.from("#nom17_img9", .5,{delay:2,  css:{"margin-top": "-30vw", opacity:0}}),0);
-  timeline.add(TweenMax.from("#nom17_img10", .5,{delay:2.2, css:{"margin-top": "-30vw", opacity:0}}),0);
-  timeline.add(TweenMax.from("#nom17_img11", .5,{delay:2.4, css:{"margin-top": "-30vw", opacity:0}}),0);
+  timeline.add(TweenMax.from("#nom17_img3", .5,{delay:.9, css:{"margin-left": "-30vw", opacity:0}}),0);
+  timeline.add(TweenMax.from("#nom17_img4", .5,{delay:1.2,  css:{opacity:0}}),0);
+  timeline.add(TweenMax.from("#nom17_img5", .5,{delay:1.5, css:{"margin-left": "-30vw", opacity:0}}),0);
+  timeline.add(TweenMax.from("#nom17_img6", .5,{delay:1.8, css:{"margin-top": "-30vw", opacity:0}}),0);
+  timeline.add(TweenMax.from("#nom17_img7", .5,{delay:2.1,  css:{"margin-top": "30vw", opacity:0}}),0);
+  timeline.add(TweenMax.from("#nom17_img8", .5,{delay:2.4, css:{"margin-left": "30vw", opacity:0}}),0);
+  timeline.add(TweenMax.from("#nom17_img9", .5,{delay:2.7,  css:{"margin-left": "-30vw", opacity:0}}),0);
+  timeline.add(TweenMax.from("#nom17_img10", .5,{delay:3, css:{opacity:0}}),0);
+  timeline.add(TweenMax.from("#nom17_img11", .5,{delay:3.3, css:{opacity:0}}),0);
   
   
   var scene = new ScrollMagic.Scene({
@@ -684,11 +684,11 @@ function slide17 (i) {
 
 function slide18 (i) {    
   var timeline = new TimelineMax({paused: true});
-  timeline.add(TweenMax.from("#nom18", 0.5, {delay:.2,css:{opacity:.7, top:"1vw"}}));
-  timeline.add(TweenMax.from("#nom18_img1", .5,{delay:.4, css:{"margin-top": "30vw", opacity:0}}),0);
-  timeline.add(TweenMax.from("#nom18_img2", .5,{delay:.6, css:{"margin-left": "30vw", opacity:0}}),0);
+  timeline.add(TweenMax.from("#nom18", 0.5, {delay:.2, css:{opacity:0}}),0);
+  timeline.add(TweenMax.from("#nom18_img1", .5,{delay:.4, css:{opacity:0}}),0);
+  timeline.add(TweenMax.from("#nom18_img2", .5,{delay:.6, css:{"margin-left": "-30vw", opacity:0}}),0);
   timeline.add(TweenMax.from("#nom18_img3", .5,{delay:.8, css:{"margin-left": "-30vw", opacity:0}}),0);
-  timeline.add(TweenMax.from("#nom18_img4", .5,{delay:1,  css:{"margin-top": "-30vw", opacity:0}}),0);
+  timeline.add(TweenMax.from("#nom18_img4", .5,{delay:1,  css:{opacity:0}}),0);
   timeline.add(TweenMax.from("#nom18_img5", .5,{delay:1.2, css:{"margin-top": "-30vw", opacity:0}}),0);
   
   
@@ -707,9 +707,9 @@ function slide18 (i) {
 function slide19 (i) {    
   var timeline = new TimelineMax({paused: true});
   
-  timeline.add(TweenMax.from("#nom19_img1", .5,{delay:.2, css:{"margin-top": "30vw", opacity:0}}),0);
+  timeline.add(TweenMax.from("#nom19_img1", .5,{delay:.2, css:{opacity:0}}),0);
   timeline.add(TweenMax.from("#nom19_img2", .5,{delay:.4, css:{"margin-left": "30vw", opacity:0}}),0);
-  timeline.add(TweenMax.from("#nom19_img3", .5,{delay:.6, css:{"margin-left": "-30vw", opacity:0}}),0);
+  timeline.add(TweenMax.from("#nom19_img3", .5,{delay:.6, css:{opacity:0}}),0);
   timeline.add(TweenMax.from("#nom19_img4", .5,{delay:.8,  css:{"margin-top": "-30vw", opacity:0}}),0);
   
   
@@ -728,9 +728,9 @@ function slide19 (i) {
 function slide20 (i) {    
   var timeline = new TimelineMax({paused: true});
   timeline.add(TweenMax.from("#nom20", 0.5, {delay:.2,css:{opacity:.7, top:"1vw"}}));
-  timeline.add(TweenMax.from("#nom20_img1", .5,{delay:.4, css:{"margin-top": "30vw", opacity:0}}),0);
-  timeline.add(TweenMax.from("#nom20_img2", .5,{delay:.6, css:{"margin-left": "30vw", opacity:0}}),0);
-  timeline.add(TweenMax.from("#nom20_img3", .5,{delay:.8, css:{"margin-left": "-30vw", opacity:0}}),0);
+  timeline.add(TweenMax.from("#nom20_img1", .5,{delay:.5, css:{"margin-top": "-30vw", opacity:0}}),0);
+  timeline.add(TweenMax.from("#nom20_img2", .5,{delay:1, css:{"margin-top": "-30vw", opacity:0}}),0);
+  timeline.add(TweenMax.from("#nom20_img3", .5,{delay:1.5, css:{"margin-top": "-30vw", opacity:0}}),0);
   
   
   var scene = new ScrollMagic.Scene({
