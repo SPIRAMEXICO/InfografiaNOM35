@@ -484,6 +484,9 @@ function slide11(i) {
     $("#cerrar6").fadeOut();
     /*$("#click7").fadeOut();*/
     $("#cerrar7").fadeOut();
+    // $("#descarga1").fadeOut();
+    // $("#descarga2").fadeOut();
+    // $("#descarga3").fadeOut();
 
     $("#click5").click(function(){
        
@@ -492,6 +495,7 @@ function slide11(i) {
         $("#click7").fadeOut();
         $("#nom11_img13").fadeIn();
         $("#cerrar5").fadeIn();
+        $("#descarga1").fadeIn();
 
     });
 
@@ -502,7 +506,8 @@ function slide11(i) {
       $("#click5").fadeIn();
       $("#click6").fadeIn();
       $("#click7").fadeIn();
-
+      $("#descarga1").fadeOut();
+    
   });
 
   $("#click6").click(function(){
@@ -512,6 +517,7 @@ function slide11(i) {
     $("#click7").fadeOut();
     $("#nom11_img14").fadeIn();
     $("#cerrar6").fadeIn();
+    $("#descarga2").fadeIn();
 
 });
 
@@ -522,6 +528,8 @@ $("#cerrar6").click(function(){
   $("#click5").fadeIn();
   $("#click6").fadeIn();
   $("#click7").fadeIn();
+  $("#descarga2").fadeOut();
+  
 });
 
 $("#click7").click(function(){
@@ -531,6 +539,7 @@ $("#click7").click(function(){
   $("#click7").fadeOut();
   $("#nom11_img15").fadeIn();
   $("#cerrar7").fadeIn();
+  $("#descarga3").fadeIn();
 
 });
 
@@ -541,8 +550,27 @@ $("#nom11_img15").fadeOut();
 $("#click5").fadeIn();
 $("#click6").fadeIn();
 $("#click7").fadeIn();
+$("#descarga3").fadeOut();
 
 });
+
+// $("#descarga1").click(function(){
+  
+  
+//   $("#descarga1").fadeOut();
+// });
+
+// $("#descarga2").click(function(){
+//   window.open("descargables/Guia_de_referencia_II.pdf")
+  
+//   $("#descarga2").fadeOut();
+// });
+
+// $("#descarga3").click(function(){
+//   window.open("descargables/Guia_de_referencia_III.pdf")
+  
+//   $("#descarga3").fadeOut();
+// });
 
     
     var scene = new ScrollMagic.Scene({
