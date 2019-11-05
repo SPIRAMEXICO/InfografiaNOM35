@@ -21,11 +21,12 @@ function playContenidoDesk() {
                 }
             }            
         });       
-        /*document.getElementById("menuNav").classList.add('menuNavEdge');
+        document.getElementById("menuNav").classList.add('menuNavEdge');
         document.querySelectorAll(".btnsNav").forEach(
             elemento => {elemento.classList.add('navEdge')}
         );   
-        document.getElementById("menuNavnom").classList.add('menuNavEdgenom');
+        
+        /*document.getElementById("menuNavnom").classList.add('menuNavEdgenom');
         document.querySelectorAll(".btnsNavnom").forEach(
             elemento => {elemento.classList.add('navEdgenom')}
         );   
@@ -61,8 +62,9 @@ function playContenidoDesk() {
   slide19(19).addTo(controller);
   slide20(20).addTo(controller);
   
-    /*
+    
         iniciarMenu();
+    /*
         iniciarMenunom();
         iniciarMenuSIX();
         iniciarMenuRetail();
@@ -78,9 +80,8 @@ function slide0(i) {
     timeline.add(TweenMax.from("#portada_img3", .5,{delay:1.2,css:{opacity:0}}),0);
     timeline.add(TweenMax.from("#portada_img4", .5,{delay:1.4,css:{"margin-left": "-30vh", opacity:0}}),0);
     timeline.add(TweenMax.from("#portada_img5", .5,{delay:1.6,css:{"margin-left": "30vh", opacity:0}}),0);
-    timeline.add(TweenMax.from("#portada_img6", .5,{delay:1.8,css:{"margin-top": "50vh", opacity:0}}),0);
-    timeline.add(TweenMax.from("#portada_img7", .5,{delay:2,css:{"margin-left": "30vh", opacity:0}}),0);
-    timeline.add(TweenMax.from("#portada_img8", .5,{delay:2.2,css:{"margin-left": "90vh", opacity:0}}),0);
+    timeline.add(TweenMax.from("#portada_img6", .5,{delay:1.8,css:{"margin-left": "90vh", opacity:0}}),0);
+    
     timeline.add(TweenMax.from("#menuNav", 1,{css:{"margin-top": "30vh", opacity:0}}),0);
     timeline.add(TweenMax.from(".indice-text", 1,{css:{"margin-top": "30vh", opacity:0}}),0);
 
@@ -146,7 +147,7 @@ function slide3(i) {
     var timeline = new TimelineMax({paused: true});
     timeline.add(TweenMax.from("#nom3", 0.5,{delay:.2,css:{opacity:.7, top:"1vw"}}));
     timeline.add(TweenMax.from("#nom3_img1", .5,{delay:.4 ,css:{"margin-top": "-30vw", opacity:0}}),0);
-    timeline.add(TweenMax.from("#nom3_img2", .5,{delay:.6, css:{scale: 0}}),0);
+    timeline.add(TweenMax.from("#nom3_img2", .5,{delay:.6, css:{"margin-top": "-30vw", opacity:0}}),0);
     timeline.add(TweenMax.from("#nom3_img3", .5,{delay:.8, css:{"margin-left": "30vw", opacity:0}}),0);
     timeline.add(TweenMax.from("#nom3_img4", .5,{delay:1, css:{"margin-left": "-30vw", opacity:0}}),0);
     timeline.add(TweenMax.from("#nom3_img5", .5,{delay:1.2, css:{"margin-top": "-10vw", opacity:0},ease:Back.easeOut}),0);
@@ -283,16 +284,21 @@ function slide8 (i) {
     timeline.add(TweenMax.from("#nom8", 0.5, {delay:.2,css:{opacity:.7, top:"1vw"}}));
     timeline.add(TweenMax.from("#nom8_img1", .5,{delay:.4 ,css:{"margin-top": "-30vw", opacity:0}}),0);
     timeline.add(TweenMax.from("#nom8_img2", .5,{delay:.6, css:{"margin-top": "-30vw", opacity:0}}),0);
-    timeline.add(TweenMax.from("#nom8_img3", .5,{delay:.8, css:{scale: 0}}),0);
-    timeline.add(TweenMax.from("#nom8_img4", .5,{delay:1, css:{"margin-left": "30vw", opacity:0}}),0);
+    timeline.add(TweenMax.from("#nom8_img3", .5,{delay:.8, css:{"margin-left": "-30vw", opacity:0}}),0);
+    timeline.add(TweenMax.from("#nom8_img4", .5,{delay:1, css:{"margin-top": "30vw", opacity:0}}),0);
     timeline.add(TweenMax.from("#nom8_img5", .5,{delay:1.2, css:{"margin-top": "30vw", opacity:0}}),0);
-    timeline.add(TweenMax.from("#nom8_img6", .5,{delay:1.4, css:{"margin-top": "-10vw", opacity:0},ease:Back.easeOut}),0);
-    timeline.add(TweenMax.from("#nom8_img7", .5,{delay:1.6, css:{"margin-left": "30vw", opacity:0}}),0);
+    timeline.add(TweenMax.from("#nom8_img6", .5,{delay:1.4, css:{"margin-left": "10vw", opacity:0},ease:Back.easeOut}),0);
+    timeline.add(TweenMax.from("#nom8_img7", .5,{delay:1.6, css:{opacity:0}}),0);
+    timeline.add(TweenMax.from("#nom8_img12", .5,{delay:2.5, css:{opacity:0}}),0);
           
     $("#nom8_img8").fadeOut();
     $("#nom8_img9").fadeOut();
     $("#nom8_img10").fadeOut();
     $("#nom8_img11").fadeOut();
+    $("#nom8_img13").fadeOut();
+    $("#nom8_img14").fadeOut();
+    $("#nom8_img15").fadeOut();
+
     $("#cerrar1").fadeOut();
     $("#click2").fadeOut();
     $("#cerrar2").fadeOut();
@@ -306,6 +312,7 @@ function slide8 (i) {
         $("#click1").fadeOut();
         $("#nom8_img8").fadeIn();
         $("#cerrar1").fadeIn();
+        $("#nom8_img12").fadeOut();
 
     });
 
@@ -314,6 +321,7 @@ function slide8 (i) {
       $("#cerrar1").fadeOut();
       $("#nom8_img8").fadeOut();
       $("#click2").fadeIn();
+      $("#nom8_img13").fadeIn();
 
   });
 
@@ -322,6 +330,7 @@ function slide8 (i) {
     $("#click2").fadeOut();
     $("#nom8_img9").fadeIn();
     $("#cerrar2").fadeIn();
+    $("#nom8_img13").fadeOut();
 
 });
 
@@ -330,6 +339,7 @@ $("#cerrar2").click(function(){
   $("#cerrar2").fadeOut();
   $("#nom8_img9").fadeOut();
   $("#click3").fadeIn();
+  $("#nom8_img14").fadeIn();
 
 });
 
@@ -338,6 +348,7 @@ $("#click3").click(function(){
   $("#click3").fadeOut();
   $("#nom8_img10").fadeIn();
   $("#cerrar3").fadeIn();
+  $("#nom8_img14").fadeOut();
 
 });
 
@@ -346,6 +357,7 @@ $("#cerrar3").click(function(){
 $("#cerrar3").fadeOut();
 $("#nom8_img10").fadeOut();
 $("#click4").fadeIn();
+$("#nom8_img15").fadeIn();
 
 });
 
@@ -354,6 +366,7 @@ $("#click4").click(function(){
   $("#click4").fadeOut();
   $("#nom8_img11").fadeIn();
   $("#cerrar4").fadeIn();
+  $("#nom8_img15").fadeOut();
 
 });
 
@@ -467,14 +480,16 @@ function slide11(i) {
     $("#nom11_img15").fadeOut();
     $("#nom8_img11").fadeOut();
     $("#cerrar5").fadeOut();
-    $("#click6").fadeOut();
+    /*$("#click6").fadeOut();*/
     $("#cerrar6").fadeOut();
-    $("#click7").fadeOut();
+    /*$("#click7").fadeOut();*/
     $("#cerrar7").fadeOut();
 
     $("#click5").click(function(){
        
         $("#click5").fadeOut();
+        $("#click6").fadeOut();
+        $("#click7").fadeOut();
         $("#nom11_img13").fadeIn();
         $("#cerrar5").fadeIn();
 
@@ -484,13 +499,17 @@ function slide11(i) {
        
       $("#cerrar5").fadeOut();
       $("#nom11_img13").fadeOut();
+      $("#click5").fadeIn();
       $("#click6").fadeIn();
+      $("#click7").fadeIn();
 
   });
 
   $("#click6").click(function(){
        
+    $("#click5").fadeOut();
     $("#click6").fadeOut();
+    $("#click7").fadeOut();
     $("#nom11_img14").fadeIn();
     $("#cerrar6").fadeIn();
 
@@ -500,12 +519,15 @@ $("#cerrar6").click(function(){
    
   $("#cerrar6").fadeOut();
   $("#nom11_img14").fadeOut();
+  $("#click5").fadeIn();
+  $("#click6").fadeIn();
   $("#click7").fadeIn();
-
 });
 
 $("#click7").click(function(){
        
+  $("#click5").fadeOut();
+  $("#click6").fadeOut();
   $("#click7").fadeOut();
   $("#nom11_img15").fadeIn();
   $("#cerrar7").fadeIn();
@@ -516,6 +538,9 @@ $("#cerrar7").click(function(){
  
 $("#cerrar7").fadeOut();
 $("#nom11_img15").fadeOut();
+$("#click5").fadeIn();
+$("#click6").fadeIn();
+$("#click7").fadeIn();
 
 });
 
@@ -755,22 +780,19 @@ function iniciarMenu(){
     $("#btn2").mouseout(function(){TweenMax.to("#btn2Tag", .5, {css:{opacity:0}});});
     $("#btn3").hover(function(){TweenMax.to("#btn3Tag", .5, {css:{opacity:1}});});
     $("#btn3").mouseout(function(){TweenMax.to("#btn3Tag", .5, {css:{opacity:0}});});
-    $("#btn4").hover(function(){TweenMax.to("#btn4Tag", .5, {css:{opacity:1}});});
-    $("#btn4").mouseout(function(){TweenMax.to("#btn4Tag", .5, {css:{opacity:0}});});
+   
    
 
     $("#btn1").on('click', function(event) {
         $("html").animate({ scrollTop : $("#portada").offset().top}, 5000);
     });
     $("#btn2").on('click', function(event) {
-        $("html").animate({ scrollTop : $("#nom1").offset().top}, 5000);
+        $("html").animate({ scrollTop : $("#nom4").offset().top}, 5000);
     });
     $("#btn3").on('click', function(event) {
-        $("html").animate({ scrollTop : $("#six1").offset().top}, 5000);
+        $("html").animate({ scrollTop : $("#nom19").offset().top}, 5000);
     });
-    $("#btn4").on('click', function(event) {
-        $("html").animate({ scrollTop : $("#retail13").offset().top}, 5000);
-    });   
+    
 }
 
 function iniciarMenunom(){

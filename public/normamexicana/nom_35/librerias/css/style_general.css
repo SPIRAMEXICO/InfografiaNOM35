@@ -304,7 +304,7 @@ li {
   flex-direction: column;
   height: 16vw;
   width: calc(29vw * 0.1);
-  background-color: hsla(0, 0%, 0%, 0.5);
+  background-color: #b52e2e;
   -moz-border-radius: 1.5vw;
   -webkit-border-radius: 1.5vw;
   border-radius: 1.5vw;
@@ -333,7 +333,7 @@ li {
   border-radius: 50%;
   height: 1vw;
   width: 1vw;
-  background-color: #696969;
+  background-color: #ffffff;
   border: 0px solid #fff;
   position: absolute;
 }
@@ -342,29 +342,25 @@ li {
   cursor: pointer;
 }
 #btn1:hover {
-  background-color: #ffffff;
+  background-color: #696969;
 }
 #btn2:hover {
-  background-color: #00822A;
+  background-color: #696969;
 }
 #btn3:hover {
-  background-color: #FB4D3D;
+  background-color: #696969;
 }
-#btn4:hover {
-  background-color: #F4AD33;
-}
+
 #btn1Tag {
-  color: #ffffff;
+  color: #696969;
 }
 #btn2Tag {
-  color: #00822A;
+  color:  #696969;
 }
 #btn3Tag {
-  color: #FB4D3D;
+  color: #696969;
 }
-#btn4Tag {
-  color: #F4AD33;
-}
+
 
 .navEdge{
   margin-bottom: 1.6vw !important;
