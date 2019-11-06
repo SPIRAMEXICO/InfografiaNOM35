@@ -77,15 +77,14 @@ video {
 }
 body {
   line-height: 1;
-  
 }
-.fondo{
+.fondo {
   background-image: url(../images/bg.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-color:#ffffff;
+  background-color: #ffffff;
 }
 
 article,
@@ -285,7 +284,6 @@ li {
   z-index: 10;
 }
 
-
 /* Estilo de Menú general */
 
 #contenedorMenu {
@@ -355,27 +353,26 @@ li {
   color: #696969;
 }
 #btn2Tag {
-  color:  #696969;
+  color: #696969;
 }
 #btn3Tag {
   color: #696969;
 }
 
-
-.navEdge{
+.navEdge {
   margin-bottom: 1.6vw !important;
 }
-.menuNavEdge{
+.menuNavEdge {
   padding-top: 1vw !important;
 }
-.indice-text{
-    transform: rotate(271deg);
-    top: 8vw;
-    position: absolute;
-    font-size: 1vw;
-    font-family: Lato;
-    left: -2vw;
-    color: #b1abab;
+.indice-text {
+  transform: rotate(271deg);
+  top: 8vw;
+  position: absolute;
+  font-size: 1vw;
+  font-family: Lato;
+  left: -2vw;
+  color: #b1abab;
 }
 
 @media screen and (orientation: portrait) {
@@ -384,7 +381,7 @@ li {
   }
 }
 
-@media only screen and (orientation: landscape)and (max-width: 767px){
+@media only screen and (orientation: landscape) and (max-width: 767px) {
   #menuNav {
     height: 24vw !important;
   }
@@ -395,8 +392,6 @@ li {
     font-size: 2vw;
   }
 }
-
-
 
 /* Estilo de Menú Heineken */
 
@@ -434,14 +429,13 @@ li {
 }
 
 .btnTagHeineken {
-  
   font-family: "Lato";
   width: 40vw;
   font-size: 1.8vw;
   color: #ffffff;
   margin-left: -1.5vw;
   /*position: absolute;*/
-  margin-top: .1vw;
+  margin-top: 0.1vw;
   /*opacity: 0;*/
   text-shadow: 1px 1px 1px rgba(87, 87, 87, 1);
 }
@@ -453,7 +447,7 @@ li {
   height: 2vw;
   width: 4.8vw;
   margin-left: -2vw;
-  background-color: rgba(87, 87, 87, .2);
+  background-color: rgba(87, 87, 87, 0.2);
   border: 0px solid #fff;
   position: absolute;
 }
@@ -462,25 +456,25 @@ li {
   cursor: pointer;
 }
 #btn1Heineken:hover {
-  background-color: rgba(0, 130, 42, .5);
+  background-color: rgba(0, 130, 42, 0.5);
 }
 #btn2Heineken:hover {
-  background-color: rgba(0, 130, 42, .5);
+  background-color: rgba(0, 130, 42, 0.5);
 }
 #btn3Heineken:hover {
-  background-color: rgba(0, 130, 42, .5);
+  background-color: rgba(0, 130, 42, 0.5);
 }
 #btn4Heineken:hover {
-  background-color: rgba(0, 130, 42, .5);
+  background-color: rgba(0, 130, 42, 0.5);
 }
 #btn5Heineken:hover {
-  background-color: rgba(0, 130, 42, .5);
+  background-color: rgba(0, 130, 42, 0.5);
 }
 #btn6Heineken:hover {
-  background-color: rgba(0, 130, 42, .5);
+  background-color: rgba(0, 130, 42, 0.5);
 }
 #btn7Heineken:hover {
-  background-color: rgba(0, 130, 42, .5);
+  background-color: rgba(0, 130, 42, 0.5);
 }
 
 #btn1TagHeineken {
@@ -504,20 +498,20 @@ li {
 #btn7TagHeineken {
   color: #ffffff;
 }
-.navEdgeHeineken{
+.navEdgeHeineken {
   margin-bottom: 1.6vw !important;
 }
-.menuNavEdgeHeineken{
+.menuNavEdgeHeineken {
   padding-top: 1vw !important;
 }
-.indice-textHeineken{
-    transform: rotate(271deg);
-    top: 18vw;
-    position: absolute;
-    font-size: 1vw;
-    font-family: Lato;
-    left: -1.4vw;
-    color: #b1abab;
+.indice-textHeineken {
+  transform: rotate(271deg);
+  top: 18vw;
+  position: absolute;
+  font-size: 1vw;
+  font-family: Lato;
+  left: -1.4vw;
+  color: #b1abab;
 }
 
 @media screen and (orientation: portrait) {
@@ -526,7 +520,7 @@ li {
   }
 }
 
-@media only screen and (orientation: landscape)and (max-width: 767px){
+@media only screen and (orientation: landscape) and (max-width: 767px) {
   #menuNavHeineken {
     height: 24vw !important;
   }
@@ -537,7 +531,6 @@ li {
     font-size: 2vw;
   }
 }
-
 
 /* Estilo de Menú SIX */
 
@@ -572,17 +565,16 @@ li {
   background-color: transparent;
   margin-left: 4vw;
   margin-bottom: -7vw;
-
 }
 
 .btnTagSIX {
   font-family: "Lato";
   width: 40vw;
-  z-index: 999; 
+  z-index: 999;
   font-size: 1.8vw;
   margin-left: -1.5vw;
   /*position: absolute;*/
-  margin-top: .1vw;
+  margin-top: 0.1vw;
   /*opacity: 0;*/
   text-shadow: 1px 1px 1px rgba(87, 87, 87, 1);
 }
@@ -595,7 +587,7 @@ li {
   height: 2vw;
   width: 4.8vw;
   margin-left: -2vw;
-  background-color: rgba(87, 87, 87, .2);
+  background-color: rgba(87, 87, 87, 0.2);
   border: 0px solid #fff;
   position: absolute;
 }
@@ -604,31 +596,31 @@ li {
   cursor: pointer;
 }
 #btn1SIX:hover {
-  background-color: rgba(251, 77, 61, .7);
+  background-color: rgba(251, 77, 61, 0.7);
 }
 #btn2SIX:hover {
-  background-color: rgba(251, 77, 61, .7);
+  background-color: rgba(251, 77, 61, 0.7);
 }
 #btn3SIX:hover {
-  background-color: rgba(251, 77, 61, .7);
+  background-color: rgba(251, 77, 61, 0.7);
 }
 #btn4SIX:hover {
-  background-color: rgba(251, 77, 61, .7);
+  background-color: rgba(251, 77, 61, 0.7);
 }
 #btn5SIX:hover {
-  background-color: rgba(251, 77, 61, .7);
+  background-color: rgba(251, 77, 61, 0.7);
 }
 #btn6SIX:hover {
-  background-color: rgba(251, 77, 61, .7);
+  background-color: rgba(251, 77, 61, 0.7);
 }
 #btn7SIX:hover {
-  background-color: rgba(251, 77, 61, .7);
+  background-color: rgba(251, 77, 61, 0.7);
 }
 #btn8SIX:hover {
-  background-color: rgba(251, 77, 61, .7);
+  background-color: rgba(251, 77, 61, 0.7);
 }
 #btn9SIX:hover {
-  background-color: rgba(251, 77, 61, .7);
+  background-color: rgba(251, 77, 61, 0.7);
 }
 
 #btn1TagSIX {
@@ -658,20 +650,20 @@ li {
 #btn9TagSIX {
   color: #ffffff;
 }
-.navEdgeSIX{
+.navEdgeSIX {
   margin-bottom: 1.6vw !important;
 }
-.menuNavEdgeSIX{
+.menuNavEdgeSIX {
   padding-top: 1vw !important;
 }
-.indice-textSIX{
-    transform: rotate(271deg);
-    top: 20vw;
-    position: absolute;
-    font-size: 1vw;
-    font-family: Lato;
-    left: .3vw;
-    color: #b1abab;
+.indice-textSIX {
+  transform: rotate(271deg);
+  top: 20vw;
+  position: absolute;
+  font-size: 1vw;
+  font-family: Lato;
+  left: 0.3vw;
+  color: #b1abab;
 }
 
 @media screen and (orientation: portrait) {
@@ -680,7 +672,7 @@ li {
   }
 }
 
-@media only screen and (orientation: landscape)and (max-width: 767px){
+@media only screen and (orientation: landscape) and (max-width: 767px) {
   #menuNavSIX {
     height: 24vw !important;
   }
@@ -734,10 +726,10 @@ li {
   font-size: 1.8vw;
   margin-left: -19.6vw;
   /*position: absolute;*/
-  margin-top: .1vw;
+  margin-top: 0.1vw;
   /*opacity: 0;*/
   text-shadow: 1px 1px 1px rgba(87, 87, 87, 1);
-  }
+}
 .navIndicadorRetail {
   /*z-index: 10;*/
   -moz-border-radius: 50%;
@@ -746,7 +738,7 @@ li {
   height: 2vw;
   width: 4.8vw;
   margin-left: -2vw;
-  background-color: rgba(87, 87, 87, .2);
+  background-color: rgba(87, 87, 87, 0.2);
   border: 0px solid #fff;
   position: absolute;
 }
@@ -755,35 +747,35 @@ li {
   cursor: pointer;
 }
 #btn1Retail:hover {
-  background-color: rgba(244, 173, 51, .7);
+  background-color: rgba(244, 173, 51, 0.7);
 }
 #btn2Retail:hover {
-  background-color: rgba(244, 173, 51, .7);
+  background-color: rgba(244, 173, 51, 0.7);
 }
 #btn3Retail:hover {
-  background-color: rgba(244, 173, 51, .7);
+  background-color: rgba(244, 173, 51, 0.7);
 }
 #btn4Retail:hover {
-  background-color: rgba(244, 173, 51, .7);
+  background-color: rgba(244, 173, 51, 0.7);
 }
 #btn5Retail:hover {
-  background-color: rgba(244, 173, 51, .7);
+  background-color: rgba(244, 173, 51, 0.7);
 }
 #btn6Retail:hover {
-  background-color: rgba(244, 173, 51, .7);
+  background-color: rgba(244, 173, 51, 0.7);
 }
 #btn7Retail:hover {
-  background-color: rgba(244, 173, 51, .7);
+  background-color: rgba(244, 173, 51, 0.7);
 }
 #btn8Retail:hover {
-  background-color: rgba(244, 173, 51, .7);
+  background-color: rgba(244, 173, 51, 0.7);
 }
 #btn9Retail:hover {
-  background-color: rgba(244, 173, 51, .7);
+  background-color: rgba(244, 173, 51, 0.7);
 }
 
 #btn1TagRetail {
-z-index: 9999;    
+  z-index: 9999;
   font-size: 1.1vw;
   color: #ffffff;
 }
@@ -811,20 +803,31 @@ z-index: 9999;
 #btn9TagRetail {
   color: #ffffff;
 }
-.navEdgeRetail{
+.navEdgeRetail {
   margin-bottom: 1.6vw !important;
 }
-.menuNavEdgeRetail{
+.menuNavEdgeRetail {
   padding-top: 1vw !important;
 }
-.indice-textRetail{
-    transform: rotate(271deg);
-    top: 20vw;
-    position: absolute;
-    font-size: 1vw;
-    font-family: Lato;
-    left: -.5vw;
-    color: #b1abab;
+.indice-textRetail {
+  transform: rotate(271deg);
+  top: 20vw;
+  position: absolute;
+  font-size: 1vw;
+  font-family: Lato;
+  left: -0.5vw;
+  color: #b1abab;
+}
+
+.btndescarga {
+  z-index: 999;
+  cursor: pointer;
+  width: 7%;
+    height: 17%;
+    top: 1.4vw;
+    right: -12.2vw;
+    position: relative;
+  background-color: rgba(14, 231, 25, 0);
 }
 
 @media screen and (orientation: portrait) {
@@ -833,7 +836,7 @@ z-index: 9999;
   }
 }
 
-@media only screen and (orientation: landscape)and (max-width: 767px){
+@media only screen and (orientation: landscape) and (max-width: 767px) {
   #menuNavRetail {
     height: 24vw !important;
   }
