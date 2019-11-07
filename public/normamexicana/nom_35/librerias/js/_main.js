@@ -602,8 +602,11 @@ function slide13 (i) {
     timeline.add(TweenMax.from("#nom13_img1", .5,{delay:.4, css:{"margin-top": "30vw", opacity:0}}),0);
     timeline.add(TweenMax.from("#nom13_img2", .5,{delay:.6, css:{"margin-left": "30vw", opacity:0}}),0);
     timeline.add(TweenMax.from("#nom13_img3", .5,{delay:.8, css:{"margin-left": "-30vw", opacity:0}}),0);
-    timeline.add(TweenMax.from("#nom13_img4", .5,{delay:1,  css:{"margin-top": "-30vw", opacity:0}}),0);
+    timeline.add(TweenMax.from("#nom13_img4", .5,{delay:1,  css:{opacity:0}}),0);
     timeline.add(TweenMax.from("#nom13_img5", .5,{delay:1.2, css:{"margin-top": "-30vw", opacity:0}}),0);
+    timeline.add(TweenMax.from("#nom13_img6", .5,{delay:1.4, css:{opacity:0}}),0);
+    timeline.add(TweenMax.from("#nom13_img7", .5,{delay:1.6,  css:{"margin-left": "-30vw", opacity:0}}),0);
+    timeline.add(TweenMax.from("#nom13_img8", .5,{delay:1.8, css:{"margin-top": "-30vw", opacity:0}}),0);
         
     var scene = new ScrollMagic.Scene({
         triggerElement: "#nom13"
@@ -620,14 +623,18 @@ function slide13 (i) {
 function slide14 (i) {    
   var timeline = new TimelineMax({paused: true});
   timeline.add(TweenMax.from("#nom14", 0.5, {delay:.2,css:{opacity:.7, top:"1vw"}}));
-  timeline.add(TweenMax.from("#nom14_img1", .5,{delay:.4, css:{"margin-top": "30vw", opacity:0}}),0);
-  timeline.add(TweenMax.from("#nom14_img2", .5,{delay:.6, css:{"margin-left": "30vw", opacity:0}}),0);
+  timeline.add(TweenMax.from("#nom14_img1", .5,{delay:.2, css:{opacity:0}}),0);
+  timeline.add(TweenMax.from("#nom14_img2", .5,{delay:.6, css:{opacity:0}}),0);
   timeline.add(TweenMax.from("#nom14_img3", .5,{delay:.8, css:{"margin-left": "-30vw", opacity:0}}),0);
   timeline.add(TweenMax.from("#nom14_img4", .5,{delay:1,  css:{"margin-top": "-30vw", opacity:0}}),0);
   timeline.add(TweenMax.from("#nom14_img5", .5,{delay:1.2, css:{"margin-top": "-30vw", opacity:0}}),0);
   timeline.add(TweenMax.from("#nom14_img6", .5,{delay:1.4, css:{"margin-top": "-30vw", opacity:0}}),0);
   timeline.add(TweenMax.from("#nom14_img7", .5,{delay:1.6,  css:{"margin-top": "-30vw", opacity:0}}),0);
   timeline.add(TweenMax.from("#nom14_img8", .5,{delay:1.8, css:{"margin-left": "30vw", opacity:0}}),0);
+  timeline.add(TweenMax.from("#nom14_img9", .5,{delay:2, css:{"margin-top": "-30vw", opacity:0}}),0);
+  timeline.add(TweenMax.from("#nom14_img10", .5,{delay:2.3, css:{"margin-top": "-30vw", opacity:0}}),0);
+  timeline.add(TweenMax.from("#nom14_img11", .5,{delay:2.6,  css:{"margin-top": "-30vw", opacity:0}}),0);
+  timeline.add(TweenMax.from("#nom14_img812", .5,{delay:2.9, css:{"margin-left": "30vw", opacity:0}}),0);
   
   
   var scene = new ScrollMagic.Scene({
